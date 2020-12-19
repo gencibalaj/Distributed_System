@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Vijushmeria e dhomes {{id}}</h1>
+
+        <h3 id="host">Host: {{result.host}}</h3>
+
+        <table id="attendance">
+            <tr><th>Email</th><th>Koha Aktive</th><th>Perqindja</th></tr>
+            {{#each result.result}}
+                <tr><td>{{this.email}}</td><td>{{this.activeTime}}</td><td>{{this.percentage}}</td></tr>
+            {{/each}}
+        </table>
+    </body>
+</html>
